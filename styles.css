@@ -1,0 +1,13 @@
+/* Desktop layout */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Mobile layout (screens 600px and below) */
+@media (max-width: 600px) {
+  .products-container {
+    grid-template-columns: 1fr; /* single column */
+  }
+}
